@@ -1,0 +1,108 @@
+:host{
+    --backgroundColor: #161D2F
+}
+
+#nav{
+    width: 5vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    align-content: space-between;
+    height: auto;
+    background-color: var(--backgroundColor);
+    border-radius: 5px;
+    height: 700px;
+    margin-left: 32px;
+    margin-top: 32px;
+}
+
+#profile{
+    width: 40px;
+    height: 40px;
+}  
+
+#allIcons-div{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    height: 200px;
+}
+
+#allIcons-div img{
+    margin-bottom: 20px;
+}
+
+#logo-img{
+    margin-top: 34px;
+    margin-bottom: 50px;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.712)
+}
+
+
+@media screen and (max-width: 1024px) {
+    #nav{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        width: 719px;
+        height: 72px;
+        width: auto;
+        margin-right: 32px;
+    }
+
+    #allIcons-div{
+        flex-direction: row;
+        width: 719px;
+        height: 72px;
+        margin-left: 30px;
+        align-items: center;
+    }
+
+    .nav-icons{
+        margin-right: 20px;
+        margin-top: 20px;
+    }
+    
+    #logo-img{
+        width: 32px;
+        height: 25.6px ;
+        margin-top: 20px;
+    }
+}
+
+@media screen and (max-width: 768px) {
+    #nav{
+        display: flex;
+        justify-content: space-between;
+        width: 100vw;
+        height: 56px;
+        justify-content: center;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    #allIcons-div{
+        flex-direction: row;
+        width: 719px;
+        height: 56px;
+        margin-left: 30px;
+        align-items: center;
+        position: relative;
+    }
+
+    .nav-icons{
+        margin-right: 20px;
+        justify-content: center;
+        top: 0;
+        bottom: 0;
+    }
+    
+    #logo-img{
+        width: 32px;
+        height: 25.6px ;
+        margin-top: 15px;
+    }
+}

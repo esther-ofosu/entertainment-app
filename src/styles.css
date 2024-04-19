@@ -1,1 +1,33 @@
-/* You can add global styles to this file, and also import other style files */
+body, html{
+    /* box-sizing: border-box; */
+    padding: 0;
+    margin: 0;
+    width: 100vw !important; 
+    height: 100vh !important;
+    overflow-x: hidden !important; 
+}
+
+body{
+    background-color: #10141E;
+}
+
+@font-face {
+    font-family: 'Lexend-Bold';
+    src: url('/assets/fonts/Lexend-Bold.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexend-Light';
+    src: url('/assets/fonts/Lexend-Light.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'Lexend-ExtraLight';
+    src: url('/assets/fonts/Lexend-ExtraLight.ttf') format('truetype');
+}
+
+
+:host{
+    --backgroundColor: #161D2F
+}
+

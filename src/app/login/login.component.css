@@ -1,0 +1,106 @@
+:host{
+    --backgroundColor: #161D2F
+}
+
+
+#logo{
+    display: flex;
+    margin: auto;
+    margin-top: 78px;
+}
+
+input::placeholder{
+    color: white;
+}
+
+h1{
+    color: white;
+    font-family: 'Lexend-Light';
+    font-weight: lighter;
+    font-size: 32px;
+}
+
+:host{
+    --backgroundColor: #161D2F
+}
+
+#login-container{
+    background-color: var(--backgroundColor);
+    width: 400px;
+    height: 373px;
+    border-radius: 5%;
+    margin: auto;
+    text-align: center;
+    margin-top: 100px;
+}
+
+#loginButton-div button{
+    color: white;
+    background-color: red;
+    width: 336px;
+    height: 48px;
+    border: none;
+    margin-bottom: 8px;
+    border-radius: 5px;
+}
+
+#loginButton-div button:hover{
+    background-color: white;
+    cursor: pointer;
+    color: black;
+}
+
+
+#signUp-div button{
+    color: red;
+    border: none;
+    background-color: var(--backgroundColor);
+}
+
+#signUp-div p{
+    color: white;
+}
+
+#email-div input, #password-div input{
+    border: none;
+    background-color: var(--backgroundColor);
+    margin-bottom: 50px;
+    border-bottom: 1px solid gray;
+    width: 336px;
+    height: 37px;
+    color: white;
+    font-family: 'Lexend-Light';
+}
+
+#email-div input:hover, #password-div input:hover{
+    border-bottom: 1px solid white;
+    cursor: pointer;
+}
+
+::placeholder{
+    color: rgba(255, 255, 255, 0.712)
+}
+
+#loginText-div{
+    display: flex;
+    margin-top: 100px;
+    padding-left: 32px;
+}
+
+
+@media screen and (max-width: 768px) {
+    #login-container{
+        width: 327px;
+        height: 420px;
+    }
+
+    #email-div input, #password-div input, #repeat-password input{
+        width: 279px;
+        height: 37px;
+    }
+
+    #loginButton-div button{
+        width: 279px;
+        height: 48px;
+    }
+}

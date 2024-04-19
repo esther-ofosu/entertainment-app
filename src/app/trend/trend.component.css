@@ -1,0 +1,65 @@
+#trendingText-div{
+    color: white;
+    font-family: 'Lexend-ExtraLight';
+    font-size: 10px;
+}
+
+#cards img{
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#row1 img{
+    width: 260px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#row2 img{
+    width: 260px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#row3 img{
+    width: 260px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+#row1{
+    gap: 20px;
+    display: flex;
+}
+
+#row2{
+    display: flex;
+    gap:20px;
+}
+
+#row3{
+    display: flex;
+    gap:20px;
+}
+
+
+#cards{
+    gap: 20px;
+    display: flex;
+    height: auto;
+    overflow-x: auto;
+    /* overflow-y: hidden; */
+}
+#cards::-webkit-scrollbar { width: 0 !important }
+
+#recommendedText-div{
+    color: white;
+    font-family: 'Lexend-ExtraLight';
+    font-size: 10px;
+}
+
+#recommendedCards-div{
+    display: grid;
+    grid-row-gap: 20px;
+}
