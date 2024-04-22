@@ -10,46 +10,27 @@
     border-radius: 5px;
 }
 
-#row1 img{
-    width: 260px;
+.trendImg{
+    width: 12px !important;
+    height: 12px !important;
+}
+
+.imgRow img{
+    width: 280px;
     height: 200px;
     border-radius: 5px;
 }
 
-#row2 img{
-    width: 260px;
-    height: 200px;
-    border-radius: 5px;
-}
-
-#row3 img{
-    width: 260px;
-    height: 200px;
-    border-radius: 5px;
-}
-
-#row1{
+.imgRow{
     gap: 20px;
     display: flex;
 }
-
-#row2{
-    display: flex;
-    gap:20px;
-}
-
-#row3{
-    display: flex;
-    gap:20px;
-}
-
 
 #cards{
     gap: 20px;
     display: flex;
     height: auto;
     overflow-x: auto;
-    /* overflow-y: hidden; */
 }
 #cards::-webkit-scrollbar { width: 0 !important }
 
@@ -63,3 +44,45 @@
     display: grid;
     grid-row-gap: 20px;
 }
+
+.title{
+    color: white;
+    font-family: 'Lexend-ExtraLight';
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 38px;
+    left: 30px;
+}
+
+#description-info{
+    display: flex;
+}
+
+#description-info div{
+    margin-right: 10px ;
+}
+
+#img-div{
+    position: relative;
+}
+
+
+
+
+
+
+
+
+@media screen and (max-width:1024px){
+    .imgRow img{
+        width: 220px;
+        height: 200px;
+        border-radius: 5px;
+    }
+}
+
+@media screen and (max-width:768px){
+
+}
+

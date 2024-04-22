@@ -27,6 +27,15 @@ export class TrendComponent {
   Community=Images[15];
   VanLife=Images[16];
   Heiress=Images[17];
-  
-
+  OffTheTrack= Images[18];
+  Whispering=Images[19];
+  One12=Images[20];
+  LoneHeart=Images[21];
+  Production= Images[22];
+  Dogs=Images[23];
+  Asia=Images[24];
+  TastyTour=Images[25];
+  Darker=Images[26];
+  Unresolved=Images[27];
+  Mission=Images[28];
 }

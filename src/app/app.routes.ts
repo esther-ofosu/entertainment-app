@@ -3,6 +3,8 @@ import { HomePageComponent } from './home-page/home-page.component';
 import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { TrendComponent } from './trend/trend.component';
+import { NotFoundError } from 'rxjs';
+import { NotfoundComponent } from './notfound/notfound.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -17,6 +19,7 @@ export const routes: Routes = [
       { path: 'series', component: HomePageComponent },
       { path: 'bookmark', component: HomePageComponent },
       { path: 'trend', component: TrendComponent  },
+      {path: '**', component: NotfoundComponent}
 
     ],
   },
