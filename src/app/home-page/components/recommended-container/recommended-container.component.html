@@ -1,0 +1,10 @@
+<div id="recommended">
+  <div id="recommendedText-div">
+    <h1>Recommended for you</h1>
+  </div>
+  <div id="recommendedCards-div" class="imgRow">
+    @for (data of Data; track $index) {
+    <app-movie-card [data]="data"></app-movie-card>
+    }
+  </div>
+</div>

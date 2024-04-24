@@ -1,0 +1,19 @@
+#trendingText-div{
+    color: white;
+    font-family: 'Lexend-ExtraLight';
+    font-size: 10px;
+}
+
+.trendImg{
+    width: 12px !important;
+    height: 12px !important;
+}
+
+#cards{
+    gap: 40px;
+    display: flex;
+    height: auto;
+    overflow-x: auto;
+}
+#cards::-webkit-scrollbar { width: 0 !important }
+

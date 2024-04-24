@@ -1,0 +1,10 @@
+<div id="trend">
+    <div id="trendingText-div">
+        <h1>Trending</h1>
+    </div>
+    <div id="cards">
+        @for (data of DataSlice; track $index) {
+        <app-trending-card [data]="data"></app-trending-card>
+        }
+    </div>
+</div>

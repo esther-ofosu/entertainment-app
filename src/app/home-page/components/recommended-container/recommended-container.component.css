@@ -1,0 +1,69 @@
+#recommendedText-div{
+    color: white;
+    font-family: 'Lexend-ExtraLight';
+    font-size: 10px;
+}
+
+#recommendedCards-div{
+    display: grid;
+    width: 100%;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    grid-row-gap: 40px;
+    column-gap: 20px;
+    
+}
+
+#recommended{
+    box-sizing: border-box;
+}
+
+.imgRow div{
+
+    display: flex;
+}
+
+
+@media screen and (max-width:1024px){
+
+    .imgRow div{
+        box-sizing: border-box;
+    }
+
+    
+    #recommendedCards-div{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        column-gap: 10px;   
+    }
+
+    #recommended{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:768px){
+    #recommended .img-div{
+        width: fit-content;
+        height: 192px;
+    }
+
+    #recommendedCards-div{
+        width: 100%;
+    }
+
+    #recommendedCards-div{
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        column-gap: 50px;
+        /* grid-template-rows: repeat(11, 1fr); */
+        /* grid-template-columns: 200px 200px; */
+        /* column-gap: 0; */
+    }
+
+    #recommend .img-div{
+        width: 100%;
+    }
+}

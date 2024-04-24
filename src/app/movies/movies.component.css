@@ -1,0 +1,35 @@
+label{
+    font-family: 'lexend-Light';
+    color: white;
+}
+
+#divWrapping-appMovie{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px; 
+    row-gap: 20px;
+}
+
+#main-div{
+    /* width: 100%; */
+}
+
+@media screen and (max-width: 1024px) {
+    
+#divWrapping-appMovie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 60px;
+}
+}
+
+
+@media screen and (max-width: 768px) {
+    
+#divWrapping-appMovie{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 0;
+    
+}
+}

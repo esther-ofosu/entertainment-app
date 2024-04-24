@@ -1,0 +1,52 @@
+
+.bookmark img{
+    width: 32px !important;
+    height: 32px !important;
+  
+}
+
+.bookmark{
+    width: 32px;
+    height: 32px;
+    position: absolute;
+    right: 10px;
+    top: 15px;
+
+}
+
+.trendImgDisplay{
+    width: 400px;
+    height: 200px;
+    border-radius: 5px;
+}
+
+
+.description-main{
+    color: white;
+    font-family: 'Lexend-ExtraLight';
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 38px;
+    left: 0;
+    margin-left: 30px;
+}
+
+.description-info{
+    font-size: 13px ;
+    align-items: center;
+    display: flex;
+}
+
+.description-info div{
+    margin-right: 10px ;
+}
+
+.img-div{
+    position: relative;
+}
+
+.title{
+    font-size: 18px;
+    font-family: 'Lexend-Light';
+}
