@@ -1,0 +1,49 @@
+label{
+    font-family: 'lexend-ExtraLight';
+    color: white;
+}
+
+#divWrapping-appMovie{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    column-gap: 30px; 
+    row-gap: 20px;
+}
+
+#main-div{
+    width: 100%;
+}
+
+.TvSeries-div{
+    margin-top: 20px !important;
+}
+
+@media screen and (max-width: 1024px) {
+    
+#divWrapping-appMovie{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    padding-right: 0px;
+}
+
+#main-div{
+    width: 94%;
+}
+
+}
+
+
+@media screen and (max-width: 768px) {
+    
+#divWrapping-appMovie{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    padding-right: 0;
+    
+}
+
+#main-div{
+    width: 99%;
+}
+
+}

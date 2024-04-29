@@ -21,9 +21,9 @@
     </div>
     <div class="bookmark" (click)="onHandleBookmark()">
         @if (isBookmarked) {
-            <img [src]="bookmarkData.BookmarkFull"  />
+            <img [src]="bookmarkData.BookmarkFull" alt="" />
             } @else {
-            <img [src]="bookmarkData.BookmarkEmpty" />
+            <img [src]="bookmarkData.BookmarkEmpty" alt="" />
             }
     </div>
   </div>

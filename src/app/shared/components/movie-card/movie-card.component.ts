@@ -25,14 +25,8 @@ export class MovieCardComponent implements OnInit {
   ngOnInit(): void {
     const bookmarkedItems: Data[] = this.utilService.loadBookmark();
     this.isBookmarked = !!bookmarkedItems.find(
-      (bookmarkItem: Data) => this.data.id === bookmarkItem.id
+      (bookmarkItem: Data) => this.data?.id === bookmarkItem?.id
     );
-
-    // this.utilService.bookmarkStateChange.subscribe(() => {
-    //   console.log('change');
-
-    //   this.onHandleBookmark();
-    // });
   }
 
   onHandleBookmark() {
@@ -44,9 +38,4 @@ export class MovieCardComponent implements OnInit {
     this.isBookmarked = !this.isBookmarked;
   }
 
-  filteredMovies = this.data;
-
-  // onFilterByCategory(){
-  //   this.filteredMovies= this.data.filter((data: { category: string; }) =>data.category =='Movie')
-  // }
 }

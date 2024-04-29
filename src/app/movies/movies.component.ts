@@ -21,7 +21,8 @@ export class MoviesComponent implements OnInit {
   @Input()
   title: string = 'Movies';
   @Input() 
-  movie!:Data;
+  movies!:Data[];
+  series!: Data[]
 
   ngOnInit(): void {
     const path = this.router.url.split('/')[2];
