@@ -72,6 +72,10 @@ h1{
     color: rgba(255, 255, 255, 0.712)
 }
 
+input{
+    outline: none;
+}
+
 #signUpText-div{
     display: flex;
     margin-top: 100px;

@@ -46,6 +46,7 @@
   color: rgba(255, 255, 255, 0.712);
 }
 
+
 @media screen and (max-width: 1024px) {
   #nav {
     display: flex;

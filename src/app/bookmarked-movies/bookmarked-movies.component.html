@@ -1,17 +1,31 @@
 <div id="main-div">
-    <label for=""> <h2> {{title}}</h2> </label>
-    <div id="divWrapping-appMovie">
-      @for (movie of movies; track $index) {
-      <app-movie-card [data]="movie"></app-movie-card>
-      }
-    </div>
+  <label for="">
+    <h2>{{ movietitle }}</h2>
+  </label>
+  <div id="divWrapping-appMovie">
+    @for (movie of movies; track $index) {
+    <app-movie-card
+      [data]="movie"
+      (bookmarkEvent)="handleBookmark()"
+    ></app-movie-card>
+    } @empty {
+    <div style="color: white; font-family:'Lexend-ExtraLight'"><p>No Movies Bookmarked</p></div>
+    }
   </div>
-  
-  <div id="main-div" class="TvSeries-div">
-    <label for=""> <h2> {{tvSeriesTitle}}</h2> </label>
-    <div id="divWrapping-appMovie">
-      @for (item of series; track $index) {
-      <app-movie-card [data]="item"></app-movie-card>
-      }
-    </div>
+</div>
+
+<div id="main-div" class="TvSeries-div">
+  <label for="">
+    <h2>{{ tvSeriesTitle }}</h2>
+  </label>
+  <div id="divWrapping-appMovie">
+    @for (item of series; track $index) {
+    <app-movie-card
+      [data]="item"
+      (bookmarkEvent)="handleBookmark()"
+    ></app-movie-card>
+    } @empty {
+    <div style="color: white; font-family:'Lexend-ExtraLight'"><p>No TV Series Bookmarked</p></div>
+    }
   </div>
+</div>

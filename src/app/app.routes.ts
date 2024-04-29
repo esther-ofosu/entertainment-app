@@ -6,10 +6,12 @@ import { NotfoundComponent } from './notfound/notfound.component';
 import { MoviesComponent } from './movies/movies.component';
 import { TvSeriesComponent } from './tv-series/tv-series.component';
 import { BookmarkedMoviesComponent } from './bookmarked-movies/bookmarked-movies.component';
+import { SignUpComponent } from './sign-up/sign-up.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
   { path: 'login', component: LoginComponent },
+  {path:'signup', component:SignUpComponent},
   {
     path: 'main',
     component: MainComponent,

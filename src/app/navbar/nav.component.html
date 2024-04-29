@@ -22,14 +22,28 @@
       alt=""
       routerLink="/main/series"
     />
-    <img
-      id="bookmark-icon"
-      src="/assets/icon-nav-bookmark.svg"
-      class="nav-icons"
-      alt=""
+
+    <div
       routerLink="/main/bookmark"
-      routerLinkActive="active-bookmark"
-    />
+      routerLinkActive="active"
+      [ngClass]="{ 'inactive-icon': !isActive, 'active-icon': isActive }"
+    >
+      @if (!isActive) {
+      <img
+        id="bookmark-icon"
+        src="/assets/icon-nav-bookmark.svg"
+        class="nav-icons"
+        alt=""
+      />
+      } @else {
+      <img
+        id="bookmark-icon"
+        src="/assets/icon-bookmark-full.svg"
+        class="nav-icons"
+        alt=""
+      />
+      }
+    </div>
   </div>
   <img src="/assets/image-avatar.png" alt="" id="profile" />
 </nav>

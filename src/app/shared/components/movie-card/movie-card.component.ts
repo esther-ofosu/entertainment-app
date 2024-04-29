@@ -1,4 +1,4 @@
-import { Component, Input, OnInit, inject } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, inject, output } from '@angular/core';
 import { bookmarkData, dataFile, playButton } from '../../../../data';
 import { BookmarkData, Data } from '../../interfaces';
 import { UtilServiceService } from '../../services/util-service.service';
@@ -16,6 +16,8 @@ export class MovieCardComponent implements OnInit {
   playImg = playButton;
 
   utilService = inject(UtilServiceService);
+
+  @Output() bookmarkEvent = new EventEmitter<null>();
 
   @Input()
   data!: Data;
@@ -36,6 +38,7 @@ export class MovieCardComponent implements OnInit {
       this.utilService.saveBookmark(this.data);
     }
     this.isBookmarked = !this.isBookmarked;
+    this.bookmarkEvent.emit()
   }
 
 }
