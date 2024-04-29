@@ -1,52 +1,64 @@
-
-.bookmark img{
-    width: 32px !important;
-    height: 32px !important;
-  
+.bookmark img {
+  width: 32px !important;
+  height: 32px !important;
 }
 
-.bookmark{
-    width: 32px;
-    height: 32px;
-    position: absolute;
-    right: 10px;
-    top: 15px;
-
+.bookmark {
+  width: 32px;
+  height: 32px;
+  position: absolute;
+  right: 10px;
+  top: 15px;
 }
 
-.trendImgDisplay{
-    width: 400px;
-    height: 200px;
-    border-radius: 5px;
+#playbutton {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  display: none;
 }
 
-
-.description-main{
-    color: white;
-    font-family: 'Lexend-ExtraLight';
-    display: flex;
-    flex-direction: column;
-    position: absolute;
-    bottom: 38px;
-    left: 0;
-    margin-left: 30px;
+#img-container {
+  position: relative;
 }
 
-.description-info{
-    font-size: 13px ;
-    align-items: center;
-    display: flex;
+.trendImgDisplay {
+  width: 400px;
+  height: 200px;
+  border-radius: 5px;
 }
 
-.description-info div{
-    margin-right: 10px ;
+#trendImgDisplayDiv:hover #playbutton {
+  display: block;
 }
 
-.img-div{
-    position: relative;
+.description-main {
+  color: white;
+  font-family: "Lexend-ExtraLight";
+  display: flex;
+  flex-direction: column;
+  position: absolute;
+  bottom: 38px;
+  left: 0;
+  margin-left: 30px;
 }
 
-.title{
-    font-size: 18px;
-    font-family: 'Lexend-Light';
+.description-info {
+  font-size: 13px;
+  align-items: center;
+  display: flex;
+}
+
+.description-info div {
+  margin-right: 10px;
+}
+
+.img-div {
+  position: relative;
+}
+
+.title {
+  font-size: 18px;
+  font-family: "Lexend-Light";
 }

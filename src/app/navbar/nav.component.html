@@ -1,10 +1,35 @@
-    <nav id="nav">
-        <img id="logo-img" src="/assets/logo.svg" alt="" class="nav-icons">
-        <div id="allIcons-div">
-            <img id="home-icon" src="/assets/icon-nav-home.svg" class="nav-icons" alt="">
-            <img id="movies-icon" src="/assets/icon-nav-movies.svg" class="nav-icons" alt="">
-            <img id="tvSeries-icon" src="/assets/icon-nav-tv-series.svg" class="nav-icons" alt="">
-            <img id="bookmark-icon" src="/assets/icon-nav-bookmark.svg" class="nav-icons" alt="">
-        </div>
-        <img src="/assets/image-avatar.png" alt="" id="profile">
-    </nav>
+<nav id="nav">
+  <img id="logo-img" src="/assets/logo.svg" alt="" />
+  <div id="allIcons-div">
+    <img
+      id="home-icon"
+      src="/assets/icon-nav-home.svg"
+      class="nav-icons"
+      alt=""
+      routerLink="/main/home"
+    />
+    <img
+      id="movies-icon"
+      src="/assets/icon-nav-movies.svg"
+      class="nav-icons"
+      alt=""
+      routerLink="/main/movies"
+    />
+    <img
+      id="tvSeries-icon"
+      src="/assets/icon-nav-tv-series.svg"
+      class="nav-icons"
+      alt=""
+      routerLink="/main/series"
+    />
+    <img
+      id="bookmark-icon"
+      src="/assets/icon-nav-bookmark.svg"
+      class="nav-icons"
+      alt=""
+      routerLink="/main/bookmark"
+      routerLinkActive="active-bookmark"
+    />
+  </div>
+  <img src="/assets/image-avatar.png" alt="" id="profile" />
+</nav>

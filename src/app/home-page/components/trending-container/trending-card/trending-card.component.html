@@ -1,12 +1,15 @@
 <div class="img-div">
-  <div>
-    <img src="{{ data.imgUrl }}" alt="" class="trendImgDisplay"/>
+  <div id="trendImgDisplayDiv">
+    <img src="{{ data.imgUrl }}" alt="" class="trendImgDisplay" />
+    <div id="playbutton">
+      <img [src]="playImg.playIcon" alt="" />
+    </div>
   </div>
   <div class="description-main">
     <div class="description-info">
       <div>{{ data.year }}</div>
       <div>
-        <img src="{{ data.icon }}" alt="" class="trendImg"/>
+        <img src="{{ data.icon }}" alt="" class="trendImg" />
       </div>
       <div>{{ data.category }}</div>
       <div>{{ data.rated }}</div>
@@ -15,7 +18,7 @@
   </div>
   <div class="bookmark" (click)="onHandleBookmark()">
     @if (isBookmarked) {
-    <img [src]="bookmarkData.BookmarkFull"  />
+    <img [src]="bookmarkData.BookmarkFull" />
     } @else {
     <img [src]="bookmarkData.BookmarkEmpty" />
     }

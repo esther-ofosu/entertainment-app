@@ -4,6 +4,8 @@ import { LoginComponent } from './login/login.component';
 import { MainComponent } from './main/main.component';
 import { NotfoundComponent } from './notfound/notfound.component';
 import { MoviesComponent } from './movies/movies.component';
+import { TvSeriesComponent } from './tv-series/tv-series.component';
+import { BookmarkedMoviesComponent } from './bookmarked-movies/bookmarked-movies.component';
 
 export const routes: Routes = [
   { path: '', redirectTo: '/login', pathMatch: 'full' },
@@ -15,8 +17,8 @@ export const routes: Routes = [
       { path: '', redirectTo: '/main/home', pathMatch: 'full' },
       { path: 'home', component: HomePageComponent },
       { path: 'movies', component: MoviesComponent },
-      { path: 'series', component: HomePageComponent },
-      { path: 'bookmark', component: HomePageComponent },
+      { path: 'series', component: TvSeriesComponent},
+      { path: 'bookmark', component: BookmarkedMoviesComponent},
       {path: '**', component: NotfoundComponent}
 
     ],

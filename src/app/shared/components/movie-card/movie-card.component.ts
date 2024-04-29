@@ -1,18 +1,21 @@
-import { Component, OnInit,Input} from '@angular/core';
-import { dataFile,bookmarkData  } from '../../../../data';
+import { Component, Input, OnInit, inject } from '@angular/core';
+import { bookmarkData, dataFile, playButton } from '../../../../data';
 import { BookmarkData, Data } from '../../interfaces';
-import { loadBookmark, removeBookmark, saveBookmark } from '../../utils';
+import { UtilServiceService } from '../../services/util-service.service';
 
 @Component({
   selector: 'app-movie-card',
   standalone: true,
   imports: [],
   templateUrl: './movie-card.component.html',
-  styleUrl: './movie-card.component.css'
+  styleUrl: './movie-card.component.css',
 })
-export class MovieCardComponent implements OnInit{
+export class MovieCardComponent implements OnInit {
   Data = dataFile;
-  Bookmark=bookmarkData;
+  Bookmark = bookmarkData;
+  playImg = playButton;
+
+  utilService = inject(UtilServiceService);
 
   @Input()
   data!: Data;
@@ -20,17 +23,30 @@ export class MovieCardComponent implements OnInit{
   isBookmarked = false;
 
   ngOnInit(): void {
-    const bookmarkedItems: Data[] = loadBookmark();
+    const bookmarkedItems: Data[] = this.utilService.loadBookmark();
     this.isBookmarked = !!bookmarkedItems.find(
       (bookmarkItem: Data) => this.data.id === bookmarkItem.id
     );
+
+    // this.utilService.bookmarkStateChange.subscribe(() => {
+    //   console.log('change');
+
+    //   this.onHandleBookmark();
+    // });
   }
 
   onHandleBookmark() {
     if (this.isBookmarked) {
-      removeBookmark(this.data.id);
+      this.utilService.removeBookmark(this.data.id);
     } else {
-      saveBookmark(this.data);
+      this.utilService.saveBookmark(this.data);
     }
+    this.isBookmarked = !this.isBookmarked;
   }
+
+  filteredMovies = this.data;
+
+  // onFilterByCategory(){
+  //   this.filteredMovies= this.data.filter((data: { category: string; }) =>data.category =='Movie')
+  // }
 }

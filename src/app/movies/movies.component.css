@@ -1,5 +1,5 @@
 label{
-    font-family: 'lexend-Light';
+    font-family: 'lexend-ExtraLight';
     color: white;
 }
 
@@ -11,7 +11,7 @@ label{
 }
 
 #main-div{
-    /* width: 100%; */
+    width: 100%;
 }
 
 @media screen and (max-width: 1024px) {
@@ -19,8 +19,13 @@ label{
 #divWrapping-appMovie{
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    padding-right: 60px;
+    padding-right: 0px;
 }
+
+#main-div{
+    width: 94%;
+}
+
 }
 
 
@@ -32,4 +37,9 @@ label{
     padding-right: 0;
     
 }
+
+#main-div{
+    width: 99%;
+}
+
 }

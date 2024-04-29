@@ -1,9 +1,12 @@
 <div class="img-div">
-    <div>
+    <div id="img-container">
       <img
         src="{{data.imgUrl }}"
         alt=""
         class="recommended-images"/>
+        <div id="playbutton">
+            <img [src]="playImg.playIcon" alt="">
+        </div>
     </div>
     <div class="description-main">
       <div class="description-info">

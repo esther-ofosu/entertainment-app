@@ -15,3 +15,7 @@ export interface BookmarkData {
   BookmarkEmpty: string;
   BookmarkFull: string;
 }
+
+export interface PlayButton{
+    playIcon: string;
+}

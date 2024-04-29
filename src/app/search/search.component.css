@@ -18,6 +18,16 @@
     height: 32px;
 }
 
+input{
+    color: white;
+    outline: none;
+    caret-color: #FC4747;
+}
+
+input:focus {
+    border-bottom: 1px solid #5A698F !important;
+}
+
 @media screen and (max-width: 768px){
     #search-div{
         width: 257px;

@@ -9,7 +9,6 @@
     margin-right: 32px !important;
 }
 
-
 @media screen and (max-width:1024px){
     #main{
         flex-direction: column;
@@ -30,5 +29,6 @@
     
     #main-content{
         margin-left: 20px !important;
+        margin-right: 20px !;
        }
 }
