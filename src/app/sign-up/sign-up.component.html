@@ -14,7 +14,7 @@
         formControlName="email"
         name="email"
         class="email"
-        [ngClass]="{ 'invalid': email.invalid && (email.dirty || email.touched )}"
+        [ngClass]="{ invalid: email.invalid && email.dirty }"
       />
       @if(email.invalid && (email.dirty || email.touched)){
       <small>
@@ -43,8 +43,8 @@
       <input
         type="password"
         placeholder="Repeat password"
-        formControlName="password"
-        name="password"
+        formControlName="repeatPassword"
+        name="repeatPassword"
         id="repeat-password-div"
       />
       @if(repeatPassword.invalid && (repeatPassword.dirty ||
@@ -54,11 +54,11 @@
         <div>Repeat Password</div>
         }
       </small>
-      } 
+      }
     </div>
 
     <div id="signUpButton-div">
-      <button routerLink="/main/home" type="submit" [disabled]="signupForm.invalid">Create an account</button>
+      <button type="submit" [disabled]="signupForm.invalid" routerLink="/main/home">Create an account</button>
     </div>
     <div id="signUp-div">
       <p>

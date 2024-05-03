@@ -24,4 +24,14 @@ export class LoginComponent {
   get password(){
     return this.loginForm.controls['password']
   }
+
+  get isFormInvalid(){
+    return this.loginForm.invalid
+  }
+
+  loginAccount(){
+    if(!this.isFormInvalid){
+      console.log(this.loginForm.value)
+    }
+  }
 }

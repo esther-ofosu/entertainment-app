@@ -39,12 +39,14 @@ export class SignUpComponent {
     return this.signupForm.controls['repeatPassword'];
   }
 
-  get isFormInvalid() {
+  get isFormInvalid(){
     return this.signupForm.invalid;
   }
 
   createAccount() {
-    console.log(this.signupForm.value);
-    console.log('form created');
+    if(!this.isFormInvalid){
+      console.log(this.signupForm.value)
+      console.log('form created');
+    }
+    }
   }
-}

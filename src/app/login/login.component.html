@@ -1,4 +1,4 @@
-<form action="" [formGroup]="loginForm">
+<form action="" [formGroup]="loginForm" (ngSubmit)="loginAccount()">
   <div>
     <img src="/assets/logo.svg" alt="" id="logo" />
   </div>
@@ -39,7 +39,7 @@
       }
     </div>
     <div id="loginButton-div">
-      <button routerLink="/main/home">Login to your account</button>
+      <button routerLink="/main/home" type="submit" [disabled]="loginForm.invalid">Login to your account</button>
     </div>
     <div id="signUp-div">
       <p>
