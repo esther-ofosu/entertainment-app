@@ -2,89 +2,36 @@
   <img id="logo-img" src="/assets/logo.svg" alt="" />
   <div id="allIcons-div">
     <div
-    routerLink="/main/home"
-    routerLinkActive="active"
-    [ngClass]="{ '/assets/icon-nav-home.svg': !isActive ||activeCategory!=='home', '/assets/icon-category-movie.svg': isActive && activeCategory==='home' }"
-  >
-    @if (!isActive ||activeCategory!=='home') {
-    <img
-      id="home-icon"
-      src="/assets/icon-nav-home.svg"
-      class="nav-icons"
-      alt=""
-    />
-    } @else if(isActive) {
-    <img
-      id="home-icon"
-      src="/assets/category-home.png"
-      class="nav-icons"
-      alt=""
-    />
-    }
-  </div>
+      routerLink="/main/home"
+      routerLinkActive="active"
+      [ngClass]="{
+        'homeInactive-icon': !isActive || activeCategory !== 'home',
+        'homeActive-icon': isActive && activeCategory === 'home'
+      }">
+    </div>
     <div
-    routerLink="/main/movies"
-    routerLinkActive="active"
-    [ngClass]="{ '/assets/icon-nav-movies.svg': !isActive ||activeCategory!=='movies', '/assets/icon-category-movie.svg': isActive && activeCategory==='movies' }"
-  >
-    @if (!isActive ||activeCategory!=='movies') {
-    <img
-      id="movies-icon"
-      src="/assets/icon-nav-movies.svg"
-      class="nav-icons"
-      alt=""
-    />
-    } @else if(isActive) {
-    <img
-      id="movies-icon"
-      src="/assets/icon-category-movie.svg"
-      class="nav-icons"
-      alt=""
-    />
-    }
-  </div>
-   
+      routerLink="/main/movies"
+      routerLinkActive="active"
+      [ngClass]="{
+        'movieInactive-icon': !isActive || activeCategory !== 'movies',
+        'movieActive-icon': isActive && activeCategory === 'movies'
+      }">
+    </div>
     <div
-    routerLink="/main/series"
-    routerLinkActive="active"
-    [ngClass]="{ '/assets/icon-nav-tv-series.svg': !isActive || activeCategory !=='series', '/assets/icon-category-tv.svg': isActive && activeCategory==='series'}"
-  >
-    @if (!isActive || activeCategory !=='series') {
-    <img
-      id="tvSeries-icon"
-      src="/assets/icon-nav-tv-series.svg"
-      class="nav-icons"
-      alt=""
-    />
-    } @else if(isActive && activeCategory==='series') {
-    <img
-      id="bookmark-icon"
-      src="/assets/icon-category-tv.svg"
-      class="nav-icons"
-      alt=""
-    />
-    }
-  </div>
+      routerLink="/main/series"
+      routerLinkActive="active"
+      [ngClass]="{
+        'seriesInactive-icon': !isActive || activeCategory !== 'series',
+        'seriesActive-icon': isActive && activeCategory === 'series'
+      }">
+    </div>
     <div
       routerLink="/main/bookmark"
       routerLinkActive="active"
-      [ngClass]="{'/assets/icon-nav-bookmark.svg': !isActive || activeCategory !=='bookmark', '/assets/icon-bookmark-full.svg': isActive && activeCategory==='bookmark'}"
-    >
-      @if (!isActive ||activeCategory !=='bookmark') {
-      <img
-        id="bookmark-icon"
-        src="/assets/icon-nav-bookmark.svg"
-        class="nav-icons"
-        alt=""
-      />
-      } @else if(isActive && activeCategory ==='bookmark'){
-      <img
-        id="bookmark-icon"
-        src="/assets/icon-bookmark-full.svg"
-        class="nav-icons"
-        alt=""
-      />
-      }
+      [ngClass]="{
+        'bookmarkInactive-icon': !isActive || activeCategory !== 'bookmark',
+        'bookmarkActive-icon': isActive && activeCategory === 'bookmark'
+      }">
     </div>
   </div>
   <img src="/assets/image-avatar.png" alt="" id="profile" />

@@ -15,10 +15,6 @@
   position: relative;
 }
 
-.nav-icons:hover {
-  fill: #fc4747;
-}
-
 #profile {
   width: 40px;
   height: 40px;
@@ -30,11 +26,75 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+  justify-content: space-between;
   height: 200px;
 }
 
-#allIcons-div img {
+.nav-icons {
   margin-bottom: 20px;
+}
+
+.homeActive-icon {
+  background-image: url("/assets/category-home.png");
+  width: 20px !important;
+  height: 20px;
+}
+
+.homeInactive-icon {
+  background-image: url("/assets/icon-nav-home.svg");
+  width: 20px;
+  height: 20px;
+  /* bottom: 50px !important; */
+}
+
+.movieInactive-icon {
+  background-image: url("/assets/icon-nav-movies.svg");
+}
+
+.movieActive-icon {
+  background-image: url("/assets/category-movie.png");
+}
+
+.seriesInactive-icon {
+  background-image: url("/assets/icon-nav-tv-series.svg");
+}
+
+.seriesActive-icon {
+  background-image: url("/assets/category-tv-icon.png");
+}
+
+.bookmarkInactive-icon {
+  background-image: url("/assets/icon-nav-bookmark.svg");
+}
+
+.bookmarkActive-icon {
+  background-image: url("/assets/category-bookmark-icon.png");
+}
+
+.movieActive-icon,.movieInactive-icon,
+.seriesActive-icon,.seriesInactive-icon,
+.bookmarkInactive-icon,.bookmarkActive-icon, 
+.homeInactive-icon,.homeActive-icon{
+  height: 20px;
+  width: 20px;
+  bottom: 50px !important;
+  background-repeat: no-repeat;
+}
+
+.homeInactive-icon:hover {
+  background-image: url("/assets/hover-home-icon.png");
+}
+
+.movieInactive-icon:hover {
+  background-image: url("/assets/hover-movie-icon.png");
+}
+
+.seriesInactive-icon:hover {
+  background-image: url("/assets/hover-tv-icon.png");
+}
+
+.bookmarkInactive-icon:hover{
+  background-image: url('/assets/hover-bookmark-icon.png');
 }
 
 #logo-img {
@@ -44,11 +104,6 @@
 
 ::placeholder {
   color: rgba(255, 255, 255, 0.712);
-}
-
-.active img{
-  width: 20px !important;
-  height: 20px !important;
 }
 
 
@@ -83,11 +138,10 @@
     margin-bottom: 0;
   }
 
-  #profile{
+  #profile {
     right: 10px;
   }
 }
-
 
 @media screen and (max-width: 768px) {
   #nav {
@@ -119,7 +173,7 @@
     height: 25.6px;
   }
 
-  #profile{
+  #profile {
     bottom: 8px;
   }
 }
