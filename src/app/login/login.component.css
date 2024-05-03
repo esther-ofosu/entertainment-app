@@ -66,7 +66,25 @@ h1{
     font-family: 'Lexend-ExtraLight';
 }
 
+#email-div,
+#password-div{
+  margin-bottom: 20px;
+  position: relative;
+}
 
+#email-div small div,
+#password-div small div{
+  color: var(--red);
+  position: absolute;
+  right: 30px;
+  top: 0;
+  font-family: "Lexend-Light";
+}
+
+#email-div .email.invalid,
+#password-div .password.invalid{
+  border-bottom: 1px solid red;
+}
 
 #email-div, #password-div{
     margin-bottom: 50px;

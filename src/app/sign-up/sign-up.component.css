@@ -106,10 +106,6 @@ input {
   outline: none;
 }
 
-.disabled {
-  background-color: gray;
-}
-
 #signUpText-div {
   display: flex;
   margin-top: 100px;
@@ -124,7 +120,6 @@ input {
   #signUp-container {
     width: 327px;
     height: 420px;
-    /* margin-top: 40px; */
   }
 
   #email-div input,
