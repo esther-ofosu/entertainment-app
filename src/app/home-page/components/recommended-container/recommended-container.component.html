@@ -3,7 +3,7 @@
     <h1>Recommended for you</h1>
   </div>
   <div id="recommendedCards-div" class="imgRow">
-    @for (data of Data; track $index) {
+    @for (data of DataFile; track $index) {
     <app-movie-card [data]="data"></app-movie-card>
     }
   </div>

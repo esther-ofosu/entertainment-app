@@ -1,7 +1,7 @@
 import { Component } from '@angular/core';
 import { dataFile } from '../../data';
 import { CommonModule, NgFor } from '@angular/common';
-import { Router, RouterModule,UrlTree } from '@angular/router';
+import { NavigationEnd, Router, RouterModule,UrlTree } from '@angular/router';
 
 @Component({
   selector: 'app-nav',
@@ -12,11 +12,26 @@ import { Router, RouterModule,UrlTree } from '@angular/router';
 })
 export class NavComponent {
   data= dataFile;
+  activeCategories:string[]=['bookmark','movies','series','home'];
+  activeCategory:string='';
   isActive: boolean = false;
 
   constructor(private router: Router) {
     this.router.events.subscribe((event) => {
-      this.isActive = this.router.isActive('/bookmark', true);
+      if (event instanceof NavigationEnd){
+        this.updateActiveCategory();
+      this.isActive = this.activeCategories.includes(this.activeCategory);
+      }
+    });
+  }
+
+  
+  updateActiveCategory() {
+    this.activeCategories.forEach(category => {
+      if (this.router.url.includes(category)) {
+        this.activeCategory = category;
+      }
     });
   }
 }
+

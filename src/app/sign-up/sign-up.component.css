@@ -1,106 +1,138 @@
-:host{
-    --backgroundColor: #161D2F
+:host {
+  --backgroundColor: #161d2f;
 }
 
-
-#logo{
-    display: flex;
-    margin: auto;
-    margin-top: 78px;
+:host {
+  --red: #fc4747;
 }
 
-h1{
-    color: white;
-    font-family: 'Lexend-Light';
-    font-weight: lighter;
-    font-size: 32px;
+#logo {
+  display: flex;
+  margin: auto;
+  margin-top: 78px;
 }
 
-#signUp-container{
-    background-color: var(--backgroundColor);
-    width: 400px;
-    height: 373px;
-    border-radius: 5%;
-    margin: auto;
-    text-align: center;
-    margin-top: 100px;
+h1 {
+  color: white;
+  font-family: "Lexend-Light";
+  font-weight: lighter;
+  font-size: 32px;
 }
 
-#signUpButton-div button{
-    color: white;
-    background-color: red;
-    width: 336px;
-    height: 48px;
-    border: none;
-    margin-bottom: 8px;
-    border-radius: 5px;
+#signUp-container {
+  background-color: var(--backgroundColor);
+  width: 400px;
+  height: 373px;
+  border-radius: 5%;
+  margin: auto;
+  text-align: center;
+  margin-top: 100px;
 }
 
-#signUpButton-div button:hover{
-    background-color: white;
-    cursor: pointer;
-    color: black;
+#signUpButton-div button {
+  color: white;
+  background-color: var(--red);
+  width: 336px;
+  height: 48px;
+  border: none;
+  margin-bottom: 8px;
+  border-radius: 5px;
 }
 
-#signUp-div button{
-    color: red;
-    border: none;
-    background-color: var(--backgroundColor);
+#signUpButton-div button:hover {
+  background-color: white;
+  cursor: pointer;
+  color: black;
 }
 
-#signUp-div p{
-    color: white;
+#signUp-div button {
+  color: var(--red);
+  border: none;
+  background-color: var(--backgroundColor);
 }
 
-#email-div input, #password-div input, #repeat-password input{
-    border: none;
-    background-color: var(--backgroundColor);
-    margin-bottom: 20px;
-    border-bottom: 1px solid gray;
-    width: 336px;
-    height: 37px;
-    color: white;
-    font-family: 'Lexend-Light';
+#signUp-div p {
+  color: white;
+  font-family: 'Lexend-ExtraLight';
 }
 
-#email-div input:hover, #password-div input:hover, #repeat-password input:hover{
-    border-bottom:1px solid white;
-    cursor: pointer;
+#email-div,
+#password-div,
+#repeat-password-div {
+  margin-bottom: 20px;
+  position: relative;
 }
 
-::placeholder{
-    color: rgba(255, 255, 255, 0.712)
+#email-div small div,
+#password-div small div {
+  color: var(--red);
+  position: absolute;
+  right: 30px;
+  top: 0;
+  font-family: "Lexend-Light";
 }
 
-input{
-    outline: none;
+#email-div .email.invalid {
+  border-bottom: 1px solid red;
 }
 
-#signUpText-div{
-    display: flex;
-    margin-top: 100px;
-    padding-left: 32px;
+#email-div input,
+#password-div input,
+#repeat-password input {
+  border: none;
+  background-color: var(--backgroundColor);
+  border-bottom: 1px solid gray;
+  width: 336px;
+  height: 37px;
+  color: white;
+  font-family: "Lexend-Light";
+}
+
+#email-div input:hover,
+#password-div input:hover,
+#repeat-password input:hover {
+  border-bottom: 1px solid white;
+  cursor: pointer;
+}
+
+::placeholder {
+  color: rgba(255, 255, 255, 0.712);
+}
+
+input {
+  outline: none;
+}
+
+.disabled {
+  background-color: gray;
+}
+
+#signUpText-div {
+  display: flex;
+  margin-top: 100px;
+  padding-left: 32px;
 }
 
 @media screen and (max-width: 765px) {
+  #signUpText-div {
+    margin-top: 10px;
+  }
 
-    #signUpText-div{
-        margin-top: 10px;
-    }
+  #signUp-container {
+    width: 327px;
+    height: 420px;
+    /* margin-top: 40px; */
+  }
 
-    #signUp-container{
-        width: 327px;
-        height: 420px;
-        /* margin-top: 40px; */
-    }
+  #email-div input,
+  #password-div input,
+  #repeat-password input {
+    width: 279px;
+    height: 37px;
+  }
 
-    #email-div input, #password-div input, #repeat-password input{
-        width: 279px;
-        height: 37px;
-    }
-
-    #signUpButton-div button{
-        width: 279px;
-        height: 48px;
-    }
+  #signUpButton-div button {
+    width: 279px;
+    height: 48px;
+  }
 }

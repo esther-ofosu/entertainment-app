@@ -2,6 +2,7 @@ import { Component, inject, Input, OnInit } from '@angular/core';
 import { Data, BookmarkData } from '../../../../shared/interfaces';
 import { bookmarkData, playButton } from '../../../../../data';
 import { UtilServiceService } from '../../../../shared/services/util-service.service';
+import { FormService } from '../../../../shared/services/form.service';
 
 @Component({
   selector: 'app-trending-card',

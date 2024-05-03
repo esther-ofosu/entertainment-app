@@ -46,6 +46,11 @@
   color: rgba(255, 255, 255, 0.712);
 }
 
+.active img{
+  width: 20px !important;
+  height: 20px !important;
+}
+
 
 @media screen and (max-width: 1024px) {
   #nav {

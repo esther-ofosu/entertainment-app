@@ -2,6 +2,10 @@
     --backgroundColor: #161D2F
 }
 
+:host{
+    --red:#FC4747
+}
+
 
 #logo{
     display: flex;
@@ -24,10 +28,6 @@ h1{
     font-size: 32px;
 }
 
-:host{
-    --backgroundColor: #161D2F
-}
-
 #login-container{
     background-color: var(--backgroundColor);
     width: 400px;
@@ -40,7 +40,7 @@ h1{
 
 #loginButton-div button{
     color: white;
-    background-color: red;
+    background-color: var(--red);
     width: 336px;
     height: 48px;
     border: none;
@@ -56,19 +56,34 @@ h1{
 
 
 #signUp-div button{
-    color: red;
+    color: var(--red);
     border: none;
     background-color: var(--backgroundColor);
 }
 
 #signUp-div p{
     color: white;
+    font-family: 'Lexend-ExtraLight';
+}
+
+
+
+#email-div, #password-div{
+    margin-bottom: 50px;
+    position: relative;
+}
+
+#email-div small div, #password-div small div{
+    color: var(--red);
+    position: absolute;
+    right: 30px;
+    top: 0;
+    font-family: 'Lexend-Light';
 }
 
 #email-div input, #password-div input{
     border: none;
     background-color: var(--backgroundColor);
-    margin-bottom: 50px;
     border-bottom: 1px solid gray;
     width: 336px;
     height: 37px;

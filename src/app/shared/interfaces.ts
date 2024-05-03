@@ -19,3 +19,7 @@ export interface BookmarkData {
 export interface PlayButton{
     playIcon: string;
 }
+
+export interface Auth{
+  
+}

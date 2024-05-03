@@ -1,4 +1,4 @@
-import { Component, EventEmitter, Input, OnInit, Output, inject, output } from '@angular/core';
+import { Component, EventEmitter, Input, OnInit, Output, inject, input, output } from '@angular/core';
 import { bookmarkData, dataFile, playButton } from '../../../../data';
 import { BookmarkData, Data } from '../../interfaces';
 import { UtilServiceService } from '../../services/util-service.service';
@@ -21,6 +21,8 @@ export class MovieCardComponent implements OnInit {
 
   @Input()
   data!: Data;
+  @Input()
+  movie!:Data;
   bookmarkData: BookmarkData = bookmarkData;
   isBookmarked = false;
 

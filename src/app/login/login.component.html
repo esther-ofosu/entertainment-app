@@ -1,25 +1,53 @@
-<div>
-    <img src="/assets/logo.svg" alt="" id="logo">
-</div>
+<form action="" [formGroup]="loginForm">
+  <div>
+    <img src="/assets/logo.svg" alt="" id="logo" />
+  </div>
 
-<div id="login-container">
+  <div id="login-container">
     <div id="loginText-div">
-        <h1>Login</h1>
+      <h1>Login</h1>
     </div>
     <div id="email-div">
-        <input type="text" placeholder="Email address">
+      <input
+        type="text"
+        placeholder="Email address"
+        formControlName="email"
+        name="email"
+      />
+      @if(email.invalid && (email.dirty || email.touched)){
+      <small>
+        @if(email.errors?.['required']){
+        <div>Can't be empty</div>
+        }
+      </small>
+      }
     </div>
     <div id="password-div">
-        <input type="password" name="" id="" placeholder="Password">
+      <input
+        type="password"
+        name="password"
+        id=""
+        placeholder="Password"
+        formControlName="password"
+      />
+      @if(password.invalid && (password.dirty || password.touched)){
+      <small>
+        @if(password.errors?.['required']){
+        <div>Password is required</div>
+        }
+      </small>
+      }
     </div>
-
     <div id="loginButton-div">
-        <button>Login to your account</button>
+      <button routerLink="/main/home">Login to your account</button>
     </div>
-    
     <div id="signUp-div">
-        <p>Don’t have an account? <button>Sign Up</button></p>
-        
+      <p>
+        Don’t have an account?
+        <button routerLink="/signup">
+          Sign Up
+        </button>
+      </p>
     </div>
-  
-</div>
+  </div>
+</form>
