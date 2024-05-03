@@ -30,6 +30,8 @@
         placeholder="Password"
         formControlName="password"
         name="password"
+        class="password"
+        [ngClass]="{ invalid: password.invalid && password.dirty }"
       />
       @if(password.invalid && (password.dirty || password.touched)){
       <small>
@@ -45,7 +47,8 @@
         placeholder="Repeat password"
         formControlName="repeatPassword"
         name="repeatPassword"
-        id="repeat-password-div"
+        class="repeatPassword"
+        [ngClass]="{ invalid: repeatPassword.invalid && repeatPassword.dirty }"
       />
       @if(repeatPassword.invalid && (repeatPassword.dirty ||
       repeatPassword.touched)){
