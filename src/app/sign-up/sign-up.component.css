@@ -127,6 +127,7 @@ input {
   #repeat-password input {
     width: 279px;
     height: 37px;
+    outline: none;
   }
 
   #signUpButton-div button {

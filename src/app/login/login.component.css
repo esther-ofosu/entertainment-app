@@ -107,6 +107,7 @@ h1{
     height: 37px;
     color: white;
     font-family: 'Lexend-Light';
+    outline: none;
 }
 
 #email-div input:hover, #password-div input:hover{

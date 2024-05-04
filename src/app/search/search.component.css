@@ -22,6 +22,7 @@ input{
     color: white;
     outline: none;
     caret-color: #FC4747;
+    outline: none;
 }
 
 input:focus {
