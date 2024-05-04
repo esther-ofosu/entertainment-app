@@ -1,11 +1,3 @@
-:host {
-  --backgroundColor: #161d2f;
-}
-
-:host {
-  --red: #fc4747;
-}
-
 #logo {
   display: flex;
   margin: auto;
@@ -76,19 +68,21 @@ h1 {
 #email-div .email.invalid,
 #password-div .password.invalid,
 #repeat-password .repeatPassword.invalid {
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--red);
 }
 
 #email-div input,
 #password-div input,
 #repeat-password input {
   border: none;
-  background-color: var(--backgroundColor);
-  border-bottom: 1px solid gray;
+  /* background-color: var(--backgroundColor); */
+  border-bottom: 1px solid var(--blueGray);
   width: 279px;
   height: 37px;
   color: white;
   font-family: "Lexend-Light";
+  box-sizing: border-box;
+  background-color: transparent;
 }
 
 #email-div input:focus, #password-div input:focus #repeat-password input:focus{

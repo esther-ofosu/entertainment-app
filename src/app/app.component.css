@@ -1,1 +1,12 @@
 
+:host{
+    --backgroundColor: #161D2F
+}
+
+:host{
+    --red:#FC4747
+}
+
+:host{
+    --blueGray: #5A698F
+  }

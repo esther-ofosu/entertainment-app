@@ -1,12 +1,3 @@
-:host{
-    --backgroundColor: #161D2F
-}
-
-:host{
-    --red:#FC4747
-}
-
-
 #logo{
     display: flex;
     margin: auto;
@@ -83,7 +74,7 @@ h1{
 
 #email-div .email.invalid,
 #password-div .password.invalid{
-  border-bottom: 1px solid red;
+  border-bottom: 1px solid var(--red);
 }
 
 #email-div, #password-div{
@@ -102,7 +93,7 @@ h1{
 #email-div input, #password-div input{
     border: none;
     background-color: var(--backgroundColor);
-    border-bottom: 1px solid gray;
+    border-bottom: 1px solid var(--blueGray);
     width: 336px;
     height: 37px;
     color: white;
