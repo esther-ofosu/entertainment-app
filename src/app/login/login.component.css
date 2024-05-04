@@ -107,6 +107,9 @@ h1{
     height: 37px;
     color: white;
     font-family: 'Lexend-Light';
+}
+
+#email-div input:focus, #password-div input:focus{
     outline: none;
     border: none;
 }

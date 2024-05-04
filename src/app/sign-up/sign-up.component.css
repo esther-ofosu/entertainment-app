@@ -85,10 +85,15 @@ h1 {
   border: none;
   background-color: var(--backgroundColor);
   border-bottom: 1px solid gray;
-  width: 336px;
+  width: 279px;
   height: 37px;
   color: white;
   font-family: "Lexend-Light";
+}
+
+#email-div input:focus, #password-div input:focus #repeat-password input:focus{
+  outline: none;
+  border: none;
 }
 
 #email-div input:hover,
@@ -120,15 +125,6 @@ input {
   #signUp-container {
     width: 327px;
     height: 420px;
-  }
-
-  #email-div input,
-  #password-div input,
-  #repeat-password input {
-    width: 279px;
-    height: 37px;
-    outline: none;
-    border: none;
   }
 
   #signUpButton-div button {
