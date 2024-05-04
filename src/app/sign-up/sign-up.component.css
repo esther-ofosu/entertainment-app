@@ -75,7 +75,6 @@ h1 {
 #password-div input,
 #repeat-password input {
   border: none;
-  /* background-color: var(--backgroundColor); */
   border-bottom: 1px solid var(--blueGray);
   width: 336px;
   height: 37px;
@@ -119,6 +118,11 @@ input {
   #signUp-container {
     width: 327px;
     height: 420px;
+  }
+
+  input{
+    width: 279px !important;
+    outline: none;
   }
 
   #signUpButton-div button {
