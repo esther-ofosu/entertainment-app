@@ -89,6 +89,12 @@ h1 {
   border: none;
 }
 
+#signUpButton-div button:disabled{
+  background-color: rgba(255, 0, 0, 0.116);
+  cursor: not-allowed;
+  color: white;
+}
+
 #email-div input:hover,
 #password-div input:hover,
 #repeat-password input:hover {
