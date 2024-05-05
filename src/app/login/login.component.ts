@@ -1,4 +1,4 @@
-import { CommonModule } from '@angular/common';
+import { CommonModule, JsonPipe } from '@angular/common';
 import { Component } from '@angular/core';
 import { FormBuilder, ReactiveFormsModule, Validators } from '@angular/forms';
 import { RouterModule } from '@angular/router';
@@ -6,13 +6,13 @@ import { RouterModule } from '@angular/router';
 @Component({
   selector: 'app-login',
   standalone: true,
-  imports: [ReactiveFormsModule,RouterModule,CommonModule],
+  imports: [ReactiveFormsModule,RouterModule,CommonModule, JsonPipe],
   templateUrl: './login.component.html',
   styleUrl: './login.component.css'
 })
 export class LoginComponent {
   loginForm= this.fb.group({
-    email:['', Validators.required, Validators.email],
+    email:['', [Validators.required, Validators.email]],
     password:['', Validators.required]
   });
 

@@ -21,6 +21,9 @@
         @if(email.errors?.['required']){
         <div>Can't be empty</div>
         }
+        @if(email.errors?.['email']){
+          <div>invalid email address</div>
+          }
       </small>
       }
     </div>
