@@ -27,7 +27,7 @@ export class RecommendedContainerComponent implements OnInit {
   }
 
   fetchMovie(value: string) {
-    this.DataFile = this.Data.slice (4).filter((item: any) =>
+    this.DataFile = this.Data.slice (5).filter((item: any) =>
       item.description.toLowerCase().includes(value.toLowerCase())
     );
   }
