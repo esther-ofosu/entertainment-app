@@ -67,7 +67,7 @@ h1 {
 
 #email-div .email.invalid,
 #password-div .password.invalid,
-#repeat-password .repeatPassword.invalid {
+#repeat-password .repeatPassword.invalid, #repeat-password .repeatPassword.invalidRepeatPassword {
   border-bottom: 1px solid var(--red);
 }
 

@@ -14,9 +14,9 @@
         formControlName="email"
         name="email"
         class="email"
-        [ngClass]="{ invalid: email.invalid && email.dirty }"
+        [ngClass]="{ invalid: invalidEmail }"
       />
-      @if(email.invalid && (email.dirty || email.touched)){
+      @if(invalidEmail){
       <small>
         @if(email.errors?.['required']){
         <div>Can't be empty</div>
@@ -34,9 +34,9 @@
         formControlName="password"
         name="password"
         class="password"
-        [ngClass]="{ invalid: password.invalid && password.dirty }"
+        [ngClass]="{ invalid:invalidPassword }"
       />
-      @if(password.invalid && (password.dirty || password.touched)){
+      @if(invalidPassword){
       <small>
         @if(password.errors?.['required']){
         <div>Password is required</div>
@@ -51,18 +51,21 @@
         formControlName="repeatPassword"
         name="repeatPassword"
         class="repeatPassword"
-        [ngClass]="{ invalid: repeatPassword.invalid && repeatPassword.dirty }"
+        [ngClass]="{ invalid: repeatPassword.invalid && repeatPassword.dirty, invalidRepeatPassword: misMatchPassword}"
       />
-      @if(repeatPassword.invalid && (repeatPassword.dirty ||
-      repeatPassword.touched)){
+      @if(repeatPassword.invalid && repeatPassword.dirty){
       <small>
         @if(repeatPassword.errors?.['required']){
-        <div>Repeat Password</div>
+        <div>Repeat Password</div> 
+        }
+        </small>
+      }
+      <small>
+        @if(misMatchPassword){
+        <div>Password should match</div>
         }
       </small>
-      }
     </div>
-
     <div id="signUpButton-div">
       <button type="submit" [disabled]="signupForm.invalid" routerLink="/main/home">Create an account</button>
     </div>
