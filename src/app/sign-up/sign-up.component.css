@@ -57,7 +57,7 @@ h1 {
 
 #email-div small div,
 #password-div small div,
-#repeat-password small div{
+#repeat-password small div {
   color: var(--red);
   position: absolute;
   right: 30px;
@@ -67,7 +67,8 @@ h1 {
 
 #email-div .email.invalid,
 #password-div .password.invalid,
-#repeat-password .repeatPassword.invalid, #repeat-password .repeatPassword.invalidRepeatPassword {
+#repeat-password .repeatPassword.invalid,
+#repeat-password .repeatPassword.invalidRepeatPassword {
   border-bottom: 1px solid var(--red);
 }
 
@@ -84,12 +85,13 @@ h1 {
   background-color: transparent;
 }
 
-#email-div input:focus, #password-div input:focus #repeat-password input:focus{
+#email-div input:focus,
+#password-div input:focus #repeat-password input:focus {
   outline: none;
   border: none;
 }
 
-#signUpButton-div button:disabled{
+#signUpButton-div button:disabled {
   background-color: rgba(255, 0, 0, 0.116);
   cursor: not-allowed;
   color: white;
@@ -126,7 +128,7 @@ input {
     height: 420px;
   }
 
-  input{
+  input {
     width: 279px !important;
   }
 

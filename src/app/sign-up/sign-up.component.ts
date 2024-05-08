@@ -1,6 +1,5 @@
 import { Component, inject } from '@angular/core';
 import {
-  FormBuilder,
   FormControl,
   FormGroup,
   FormsModule,
@@ -20,29 +19,15 @@ import { passwordMatchValidator } from '../shared/password-match';
 })
 export class SignUpComponent {
   router = inject(Router);
-  // formbuilder= inject(FormBuilder);
-  // signupForm: FormGroup;
 
-  // constructor (){
-  //   this.signupForm= new FormGroup({
-  //     email: new FormControl(null,[Validators.required, Validators.email]),
-  //     password: new FormControl(null,[Validators.required]),
-  //     repeatPassword: new FormControl(null,[Validators.required])
+    signupForm= new FormGroup({
+      email: new FormControl(null,[Validators.required, Validators.email]),
+      password: new FormControl(null,[Validators.required]),
+      repeatPassword: new FormControl(null,[Validators.required])
 
-  //   },{
-  //     validators: passwordMatchValidator
-  //   })
-  // }
-
-  constructor(private formbuilder: FormBuilder) {}
-
-  signupForm = this.formbuilder.group({
-    email: ['', [Validators.required, Validators.email]],
-    password: ['', Validators.required],
-    repeatPassword: ['', Validators.required],
-  }, {
-    validators: passwordMatchValidator
-  });
+    },{
+      validators: passwordMatchValidator
+    })
 
   get email() {
     return this.signupForm.controls['email'];
@@ -61,7 +46,7 @@ export class SignUpComponent {
   }
 
   get invalidPassword(){
-    return this.password.invalid && this.password.dirty
+    return this.password.invalid && this.password.dirty 
   }
 
   get invalidRepeatPassword(){
@@ -79,7 +64,6 @@ export class SignUpComponent {
   createAccount() {
     if(!this.isFormInvalid){
       console.log(this.signupForm.value)
-      console.log('form created');
     }
     }
   }
