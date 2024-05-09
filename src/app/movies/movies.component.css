@@ -2,25 +2,32 @@ label{
     font-family: 'lexend-ExtraLight';
     color: white;
 }
-
-#divWrapping-appMovie{
+/* 
+#div-wrapping-appmovie{
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     column-gap: 30px; 
-    row-gap: 20px;
-}
+    row-gap: 5px;
+    z-index: 1;
+} */
 
 #main-div{
     width: 100%;
 }
 
+@media screen and (min-width: 1910px) {
+    /* #div-wrapping-appmovie{
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+    } */
+}
+
 @media screen and (max-width: 1024px) {
     
-#divWrapping-appMovie{
+/* #div-wrapping-appmovie{
     display: grid;
-    grid-template-columns: repeat(3, 1fr);
     padding-right: 0px;
-}
+} */
 
 #main-div{
     width: 94%;
@@ -31,12 +38,11 @@ label{
 
 @media screen and (max-width: 768px) {
     
-#divWrapping-appMovie{
+/* #div-wrapping-appmovie{
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     padding-right: 0;
-    
-}
+} */
 
 #main-div{
     width: 99%;

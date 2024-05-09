@@ -9,8 +9,8 @@
     width: 100%;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: repeat(6, 1fr);
-    grid-row-gap: 40px;
-    column-gap: 20px;
+    grid-row-gap: 50px;
+    column-gap: 40px;
     
 }
 
@@ -20,13 +20,21 @@
 }
 
 
+@media screen and (min-width: 1910px) {
+    #recommendedCards-div{
+        grid-row-gap: 90px;
+    }
+}
+
+
 @media screen and (max-width:1024px){
     
     #recommendedCards-div{
         width: 100%;
         display: grid;
         grid-template-columns: repeat(3, 1fr);
-        column-gap: 10px;  
+        column-gap: 20px;  
+        grid-row-gap: 10px;
     }
 
     #recommended{
@@ -41,6 +49,17 @@
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         column-gap: 50px;
+        row-gap: 90px;
     }
 
+    #recommended .img-div{
+        width: 100%;
+    }
+
+}
+
+@media screen and (max-width:550px){
+    #recommendedCards-div{
+        row-gap: 30px;
+    }
 }

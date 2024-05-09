@@ -3,23 +3,23 @@
 }
 
 #nav {
-  width: 5vw;
+  width: 70px;
   display: flex;
   flex-direction: column;
   align-items: center;
   background-color: var(--backgroundColor);
   border-radius: 10px;
-  height: 700px;
+  height: 550px;
   margin-left: 32px;
   margin-top: 32px;
-  position: relative;
+  position: fixed;
 }
 
 #profile {
   width: 40px;
   height: 40px;
   position: absolute;
-  bottom: 20px;
+  bottom: 10px;
 }
 
 #allIcons-div {
@@ -70,10 +70,14 @@
   background-image: url("/assets/category-bookmark-icon.png");
 }
 
-.movieActive-icon,.movieInactive-icon,
-.seriesActive-icon,.seriesInactive-icon,
-.bookmarkInactive-icon,.bookmarkActive-icon, 
-.homeInactive-icon,.homeActive-icon{
+.movieActive-icon,
+.movieInactive-icon,
+.seriesActive-icon,
+.seriesInactive-icon,
+.bookmarkInactive-icon,
+.bookmarkActive-icon,
+.homeInactive-icon,
+.homeActive-icon {
   height: 20px;
   width: 20px;
   bottom: 50px !important;
@@ -82,18 +86,22 @@
 
 .homeInactive-icon:hover {
   background-image: url("/assets/hover-home-icon.png");
+  cursor: pointer;
 }
 
 .movieInactive-icon:hover {
   background-image: url("/assets/hover-movie-icon.png");
+  cursor: pointer;
 }
 
 .seriesInactive-icon:hover {
   background-image: url("/assets/hover-tv-icon.png");
+  cursor: pointer;
 }
 
-.bookmarkInactive-icon:hover{
-  background-image: url('/assets/hover-bookmark-icon.png');
+.bookmarkInactive-icon:hover {
+  background-image: url("/assets/hover-bookmark-icon.png");
+  
 }
 
 #logo-img {
@@ -105,17 +113,16 @@
   color: rgba(255, 255, 255, 0.712);
 }
 
-
 @media screen and (max-width: 1024px) {
   #nav {
     display: flex;
     flex-direction: row;
-    width: 719px;
+    width: 93vw;
     height: 72px;
-    width: auto;
     margin-right: 32px;
     justify-content: space-between;
     top: 5px;
+    /* z-index: 9999999999 !important; */
   }
 
   #allIcons-div {
@@ -142,9 +149,9 @@
 
   #profile {
     margin-right: 13px;
-    position:static;
+    position: static;
     align-self: center;
- }
+  }
 }
 
 @media screen and (max-width: 768px) {
