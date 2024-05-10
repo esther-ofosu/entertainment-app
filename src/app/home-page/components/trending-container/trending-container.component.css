@@ -17,3 +17,13 @@
 }
 #cards::-webkit-scrollbar { width: 0 !important }
 
+#trend{
+    margin-top: 100px;
+}
+
+@media screen and (max-width:1024px) {
+    #trend{
+        margin-top: 40px;
+    }
+}
+

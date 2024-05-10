@@ -19,6 +19,13 @@
     width: 97%;
 }
 
+@media screen and (min-width: 1910px) {
+     
+    #recommendedCards-div{
+        column-gap: 60px;  
+    }
+}
+
 
 @media screen and (max-width:1024px){
     

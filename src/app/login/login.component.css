@@ -62,6 +62,10 @@ h1{
     font-family: 'Lexend-ExtraLight';
 }
 
+#signUp-div:hover{
+    cursor: pointer;
+}
+
 #email-div,
 #password-div{
   margin-bottom: 20px;

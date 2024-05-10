@@ -14,6 +14,10 @@ label{
     width: 100%;
 }
 
+#main-div{
+    margin-top: 100px;
+}
+
 .TvSeries-div{
     margin-top: 50px !important;
 }
@@ -28,6 +32,7 @@ label{
 
 #main-div{
     width: 94%;
+    margin-top: 40px;
 }
 
 }

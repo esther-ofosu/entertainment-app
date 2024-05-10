@@ -73,10 +73,22 @@
   right: 0;
 }
 
+@media screen and (min-width: 1910px) {
+  .recommended-images {
+    width: 100%;
+    height: 220px !important;
+  }
+
+  .img-div {
+    height: 270px;
+  }
+}
+
 @media screen and (max-width: 1024px) {
   .recommended-images {
     width: 100%;
-    height: 160px !important;
+    height: 160px;
+    margin-bottom: 0;
   }
 
   .img-div {
@@ -87,8 +99,8 @@
 @media screen and (max-width: 768px) {
   .recommended-images {
     width: 100%;
-    height: 110px !important;
-    margin-bottom: 20px !important;
+    height: 145px !important;
+    margin-bottom: 5px;
   }
 
   .img-div {

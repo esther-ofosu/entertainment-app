@@ -15,7 +15,11 @@
 }
 
 #search-div{
-    height: 32px;
+    width: 90vw;
+    height: 100px;
+    position: absolute;
+    z-index: 4;
+    background-color:#10141E;
 }
 
 input{
@@ -32,10 +36,20 @@ input:focus {
     border: none;
 }
 
+@media screen and (max-width: 1024px){
+    #search-div{
+        width: 257px;
+        position: static;
+        height: 20px;
+    }
+
+}
+
 @media screen and (max-width: 768px){
     #search-div{
         width: 257px;
-        margin-left: 16px;
+        position: static;
+        height: 20px;
     }
 
     #search-nav{
@@ -46,6 +60,3 @@ input:focus {
 }
 
 
-@media screen and (max-width: 1024px){
-
-}
