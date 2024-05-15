@@ -23,3 +23,8 @@ export interface PlayButton{
 export interface Auth{
   
 }
+
+export interface User{
+  email:string,
+  password:string
+}

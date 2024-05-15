@@ -39,7 +39,7 @@
 
 .recommended-images {
   width: 100%;
-  height: 174px !important;
+  height: 174px;
   margin-bottom: 50px;
   border-radius: 5px;
   left: 0;
@@ -76,7 +76,7 @@
 @media screen and (min-width: 1910px) {
   .recommended-images {
     width: 100%;
-    height: 220px !important;
+    height: 220px;
   }
 
   .img-div {
@@ -99,12 +99,29 @@
 @media screen and (max-width: 768px) {
   .recommended-images {
     width: 100%;
-    height: 145px !important;
+    height: 150px ;
     margin-bottom: 5px;
   }
 
   .img-div {
     width: 100%;
-    height: 192px;
+    height: 200px;
   }
+  
+}
+
+
+
+@media screen and (max-width: 550px) {
+  .recommended-images {
+    width: 100%;
+    height: 110px;
+    margin-bottom: 5px;
+  }
+
+  .img-div {
+    width: 100%;
+    height: 160px;
+  }
+  
 }

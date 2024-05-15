@@ -1,7 +1,17 @@
-import { Component, EventEmitter, Input, OnInit, Output, inject, input, output } from '@angular/core';
+import {
+  Component,
+  EventEmitter,
+  Input,
+  OnInit,
+  Output,
+  inject,
+  input,
+  output,
+} from '@angular/core';
 import { bookmarkData, dataFile, playButton } from '../../../../data';
 import { BookmarkData, Data } from '../../interfaces';
 import { UtilServiceService } from '../../services/util-service.service';
+import { url } from 'inspector';
 
 @Component({
   selector: 'app-movie-card',
@@ -22,7 +32,7 @@ export class MovieCardComponent implements OnInit {
   @Input()
   data!: Data;
   @Input()
-  movie!:Data;
+  movie!: Data;
   bookmarkData: BookmarkData = bookmarkData;
   isBookmarked = false;
 
@@ -31,6 +41,8 @@ export class MovieCardComponent implements OnInit {
     this.isBookmarked = !!bookmarkedItems.find(
       (bookmarkItem: Data) => this.data?.id === bookmarkItem?.id
     );
+
+    this.getScreenSize();
   }
 
   onHandleBookmark() {
@@ -40,7 +52,13 @@ export class MovieCardComponent implements OnInit {
       this.utilService.saveBookmark(this.data);
     }
     this.isBookmarked = !this.isBookmarked;
-    this.bookmarkEvent.emit()
+    this.bookmarkEvent.emit();
   }
 
+  innerWidth!: number;
+
+  getScreenSize() {
+    this.innerWidth = window.innerWidth;
+    console.log('innerwidth: ', { name: 'Esther' });
+  }
 }

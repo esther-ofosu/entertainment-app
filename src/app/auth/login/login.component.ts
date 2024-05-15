@@ -32,7 +32,7 @@ export class LoginComponent {
 
   loginAccount(){
     if(!this.isFormInvalid){
-      console.log(this.loginForm.value)
+      localStorage.setItem('token', JSON.stringify(this.loginForm.value.email))
     }
   }
 }
