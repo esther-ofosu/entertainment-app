@@ -19,7 +19,7 @@ export class MoviesComponent implements OnInit {
   router = inject(Router);
 
   @Input()
-  title: string = 'Movies';
+  title: string = "Esther's movies house";
   @Input() 
   movies!:Data[];
   series!: Data[]
