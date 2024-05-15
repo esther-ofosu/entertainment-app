@@ -23,19 +23,7 @@ export class SupabaseService {
       environment.supabaseKey
     );
 
-    // private readonly formBuilder: FormBuilder
   }
-
-  //   get session() {
-  //     this.supabase.auth.getSession().then(({ data }) => {
-  //       this._session = data.session
-  //     })
-  //     return this._session
-  //   }
-
-  //   authChanges(callback: (event: AuthChangeEvent, session: Session | null) => void) {
-  //     return this.supabase.auth.onAuthStateChange(callback)
-  //   }
 
   async signUp(user: User) {
     try {
@@ -44,7 +32,7 @@ export class SupabaseService {
         password: user.password,
       });
       if (error) {
-        // alert(`supabase error: ${error.message}`)
+        alert(`supabase error: ${error.message}`)
         console.error(`supabase error: ${error.message}`);
       } else {
         console.log(data);

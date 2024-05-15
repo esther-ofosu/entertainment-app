@@ -59,6 +59,5 @@ export class MovieCardComponent implements OnInit {
 
   getScreenSize() {
     this.innerWidth = window.innerWidth;
-    console.log('innerwidth: ', { name: 'Esther' });
   }
 }

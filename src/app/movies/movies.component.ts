@@ -31,9 +31,6 @@ export class MoviesComponent implements OnInit {
       const categorySplit = item.category.split(' ');
       if (categorySplit.length > 1) category = categorySplit[1].toLowerCase();
       else category = categorySplit[0].toLowerCase() + 's';
-
-      console.log(category);
-
       return category === path;
     });
   }

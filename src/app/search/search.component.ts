@@ -17,7 +17,6 @@ export class SearchComponent implements OnInit {
   searchTerm: string = '';
 
   ngOnInit(): void {
-    console.log(this.searchData);
     this.searchData = dataFile;
   }
   onSearch(event: Event) {
