@@ -1,9 +1,23 @@
 <div class="img-div">
     <div id="img-container">
+      @if (innerWidth > 1024) {
       <img
         src="{{data.imgUrl }}"
         alt=""
         class="recommended-images"/>
+      }
+      @if (innerWidth <= 1024 && innerWidth > 768) {
+        <img
+          src="{{data.tabUrl }}"
+          alt=""
+          class="recommended-images"/>
+        }
+        @if (innerWidth <=768) {
+          <img
+            src="{{data.mobUrl }}"
+            alt=""
+            class="recommended-images"/>
+          }
         <div id="playbutton">
             <img [src]="playImg.playIcon" alt="">
         </div>

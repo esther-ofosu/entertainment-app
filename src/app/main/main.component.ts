@@ -19,8 +19,6 @@ export class MainComponent implements OnInit {
   router = inject(Router);
 
   ngOnInit(): void {
-    // this.router.events.subscribe((event: any) => {
-    //   console.log(event.url?.split('/')[2]);
-    // });
+   
   }
 }

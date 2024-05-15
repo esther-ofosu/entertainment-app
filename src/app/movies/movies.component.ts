@@ -19,7 +19,7 @@ export class MoviesComponent implements OnInit {
   router = inject(Router);
 
   @Input()
-  title: string = 'Movies';
+  title: string = "Esther's movies house";
   @Input() 
   movies!:Data[];
   series!: Data[]
@@ -31,9 +31,6 @@ export class MoviesComponent implements OnInit {
       const categorySplit = item.category.split(' ');
       if (categorySplit.length > 1) category = categorySplit[1].toLowerCase();
       else category = categorySplit[0].toLowerCase() + 's';
-
-      console.log(category);
-
       return category === path;
     });
   }

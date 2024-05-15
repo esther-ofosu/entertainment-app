@@ -43,6 +43,10 @@ h1 {
   background-color: var(--backgroundColor);
 }
 
+#signUp-div button:hover{
+  cursor: pointer;
+}
+
 #signUp-div p {
   color: white;
   font-family: "Lexend-ExtraLight";

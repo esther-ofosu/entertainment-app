@@ -34,8 +34,6 @@ export class UtilServiceService {
     const match = data.find((bookmarkItem: Data) => bookmarkItem.id == id);
     if (match) {
       data = data.filter((bookmarkItem) => bookmarkItem.id != id);
-      console.log(data);
-
       localStorage.setItem(LOCAL_KEYS.BOOKMARK, JSON.stringify(data));
     }
   };
