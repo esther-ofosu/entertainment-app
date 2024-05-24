@@ -1,11 +1,11 @@
 import { identifierName } from '@angular/compiler';
+import { Data } from './app/shared/interfaces';
 
-export const dataFile: any = [
+export const dataFile:Data[] =  [
   {
     id: 1,
     description: 'Beyond Earth',
     imgUrl: '/assets/thumbnails/beyond-earth/trending/large.jpg',
-    imgSUrl: '/assets/thumbnails/beyond-earth/trending/small.jpg',
     deskUrl: '/assets/thumbnails/beyond-earth/regular/large.jpg',
     tabUrl: '/assets/thumbnails/beyond-earth/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/beyond-earth/regular/small.jpg',
@@ -19,7 +19,6 @@ export const dataFile: any = [
     id: 2,
     description: 'Bottom Gear',
     imgUrl: '/assets/thumbnails/bottom-gear/trending/large.jpg',
-    imgSUrl: '/assets/thumbnails/bottom-gear/trending/small.jpg',
     deskUrl: '/assets/thumbnails/bottom-gear/regular/large.jpg',
     tabUrl: '/assets/thumbnails/bottom-gear/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/bottom-gear/regular/small.jpg',
@@ -33,7 +32,6 @@ export const dataFile: any = [
     id: 3,
     description: 'Undiscovered Cities',
     imgUrl: '/assets/thumbnails/undiscovered-cities/trending/large.jpg',
-    imgSUrl: '/assets/thumbnails/undiscovered-cities/trending/small.jpg',
     deskUrl: '/assets/thumbnails/undiscovered-cities/regular/large.jpg',
     tabUrl: '/assets/thumbnails/undiscovered-cities/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/undiscovered-cities/regular/small.jpg',
@@ -47,7 +45,6 @@ export const dataFile: any = [
     id: 4,
     description: '1998',
     imgUrl: '/assets/thumbnails/1998/trending/large.jpg',
-    imgSUrl: '/assets/thumbnails/1998/trending/small.jpg',
     deskUrl: '/assets/thumbnails/1998/regular/large.jpg',
     tabUrl: '/assets/thumbnails/1998/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/1998/regular/small.jpg',
@@ -61,7 +58,6 @@ export const dataFile: any = [
     id: 5,
     description: 'Dark Side Of The Moon',
     imgUrl: '/assets/thumbnails/dark-side-of-the-moon/trending/large.jpg',
-    imgSUrl: '/assets/thumbnails/dark-side-of-the-moon/trending/small.jpg',
     deskUrl: '/assets/thumbnails/dark-side-of-the-moon/regular/large.jpg',
     tabUrl: '/assets/thumbnails/dark-side-of-the-moon/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/dark-side-of-the-moon/regular/small.jpg',
@@ -75,7 +71,6 @@ export const dataFile: any = [
     id: 6,
     description: 'The Great Lands',
     imgUrl: '/assets/thumbnails/the-great-lands/regular/large.jpg',
-    imgSUrl: '/assets/thumbnails/the-great-lands/trending/small.jpg',
     deskUrl: '/assets/thumbnails/the-great-lands/regular/large.jpg',
     tabUrl: '/assets/thumbnails/the-great-lands/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/the-great-lands/regular/small.jpg',
@@ -89,7 +84,6 @@ export const dataFile: any = [
     id: 7,
     description: 'The Diary',
     imgUrl: '/assets/thumbnails/the-diary/regular/large.jpg',
-    imgSUrl: '/assets/thumbnails/the-diary/trending/small.jpg',
     deskUrl: '/assets/thumbnails/the-diary/regular/large.jpg',
     tabUrl: '/assets/thumbnails/the-diary/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/the-diary/regular/small.jpg',
@@ -103,7 +97,6 @@ export const dataFile: any = [
     id: 8,
     description: "Earth's Untouched",
     imgUrl: '/assets/thumbnails/earths-untouched/regular/large.jpg',
-    imgSUrl: '/assets/thumbnails/earths-untouched/trending/small.jpg',
     deskUrl: '/assets/thumbnails/earths-untouched/regular/large.jpg',
     tabUrl: '/assets/thumbnails/earths-untouched/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/earths-untouched/regular/small.jpg',
@@ -117,7 +110,6 @@ export const dataFile: any = [
     id: 9,
     description: 'No Land Beyond',
     imgUrl: '/assets/thumbnails/no-land-beyond/regular/large.jpg',
-    imgSUrl: '/assets/thumbnails/no-land-beyond/trending/small.jpg',
     deskUrl: '/assets/thumbnails/no-land-beyond/regular/large.jpg',
     tabUrl: '/assets/thumbnails/no-land-beyond/regular/medium.jpg',
     mobUrl: '/assets/thumbnails/no-land-beyond/regular/small.jpg',

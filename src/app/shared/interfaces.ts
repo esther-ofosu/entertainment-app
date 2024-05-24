@@ -2,7 +2,7 @@ export interface Data {
   id: number;
   description: string;
   imgUrl: string;
-  deskUrl: string;
+  deskUrl?: string;
   tabUrl: string;
   mobUrl: string;
   year: number;

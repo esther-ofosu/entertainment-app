@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { MovieCardComponent } from '../../../shared/components/movie-card/movie-card.component';
 import { dataFile, bookmarkData } from '../../../../data';
 import { FormService } from '../../../shared/services/form.service';
+import { Data } from '../../../shared/interfaces';
 
 @Component({
   selector: 'app-recommended-container',
@@ -12,7 +13,7 @@ import { FormService } from '../../../shared/services/form.service';
 })
 export class RecommendedContainerComponent implements OnInit {
   Data = dataFile;
-  DataFile = [];
+  DataFile:Data[] = [];
   DataSlice = [];
   Bookmark = bookmarkData;
   input = '';

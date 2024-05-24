@@ -42,7 +42,7 @@
         <div>Password is required</div>
         }
         @if(password.errors?.['minlength']){
-          <div>Password is less than 6 characters</div>
+          <div>Password is less than 8 characters</div>
           }
       </small>
       }
@@ -70,7 +70,8 @@
       </small>
     </div>
     <div id="signUpButton-div">
-      <button type="submit" [disabled]="signupForm.invalid">Create an account</button>
+      <button  type="submit" [disabled]="signupForm.invalid">Create an account</button>
+      <!-- routerLink="/login" -->
     </div>
     <div id="signUp-div">
       <p>

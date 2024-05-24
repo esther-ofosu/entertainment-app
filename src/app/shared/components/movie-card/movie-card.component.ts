@@ -5,8 +5,6 @@ import {
   OnInit,
   Output,
   inject,
-  input,
-  output,
 } from '@angular/core';
 import { bookmarkData, dataFile, playButton } from '../../../../data';
 import { BookmarkData, Data } from '../../interfaces';
@@ -58,6 +56,8 @@ export class MovieCardComponent implements OnInit {
   innerWidth!: number;
 
   getScreenSize() {
+    if(typeof window !== 'undefined'){
     this.innerWidth = window.innerWidth;
   }
+}
 }

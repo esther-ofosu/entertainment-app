@@ -2,6 +2,7 @@ import { Component, OnInit } from '@angular/core';
 import { TrendingCardComponent } from './trending-card/trending-card.component';
 import { dataFile, bookmarkData } from '../../../../data';
 import { FormService} from '../../../shared/services/form.service';
+import { Data } from '../../../shared/interfaces';
 
 @Component({
   selector: 'app-trending-container',
@@ -12,7 +13,7 @@ import { FormService} from '../../../shared/services/form.service';
 })
 export class TrendingContainerComponent implements OnInit {
   Data = dataFile;
-  DataSlice = []
+  DataSlice:Data[] = []
   Bookmark = bookmarkData;
   input = '';
 
